@@ -1,6 +1,6 @@
 # Admin Dashboard
 
-A modern admin dashboard built with HTML and CSS as part of the Intermediate HTML and CSS course from ## [The Odin Project](https://www.theodinproject.com).
+A modern admin dashboard built with HTML and CSS as part of the Intermediate HTML and CSS course from **[The Odin Project](https://www.theodinproject.com)**.
 
 ## Overview
 
