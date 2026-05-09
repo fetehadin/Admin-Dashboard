@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Increase line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+.icon{
+    width: 35px;
+    height: 35px;
+}
+.dashboard-icon{
+    width: 65px;
+    height: 65px;
+}
+.profile-image{
+    width: 70px;
+    height: 70px;
+    border-radius: 32px;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    min-height: 100vh;
+}
+
+
+/* side bar */
+
+aside{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.side-bar{
+    
+    background-color: #1F91D3;
+    color: white;
+    font-size: 24px;
+    font-weight: 900;
+}
+.side-bar > ul{
+    display: grid;
+    grid-template-columns: 280px;
+    gap: 30px;
+    margin-top: 30px;
+}
+.side-bar > ul > li{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.side-bar > ul > li *{
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.dashboard{
+    margin-bottom: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.communities{
+    margin-top: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* header */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 170px;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-rows: 85px 85px;
+}
+.search-bar{
+    display: grid;
+    grid-template-rows: 85px;
+    grid-template-columns: 575px  380px;
+    gap: 140px;
+    margin-left: 40px;
+}
+
+
+.search{
+    display: grid;
+    grid-template-columns: 40px 570px;
+    
+}
+.search >input{
+    background-color: #E1E7F0;
+    height: 40px;
+    margin-top: 25px;
+    border-radius: 40px;
+}
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    margin-top: 10px;
+}
+.notify{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    align-items: center;
+    
+}
+.profile-bar{
+    display: grid; 
+    grid-template-columns: 650px 310px; 
+    gap: 32px;
+}
+.profile-bar > ul{
+     /* margin: auto; */
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns:  100px 100px 100px;
+    gap: 60px;
+    
+}
+.profile-bar > ul >li{
+    display: flex;
+    width: 120px;
+    height: 45px;
+    list-style: none;
+    align-items: center;
+    margin-left: 25px;
+    background-color: #1F91D3;
+    border-radius: 25px;
+    justify-content: center;
+    color: white;
+    font-weight: 900;
+}
+
+.welcome-profile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.welcome-profile > *{
+    margin-left: 20px;
+    
+}
+
+/* section */
+
+section{
+    background-color: #E1E7F0;
+}
+.projects-container{
+    margin-left: 20px;
+}
+.h2{
+    display: grid;
+    grid-template-columns: 850px 1fr;
+    margin-bottom: 25px;
+    padding-top: 25px;
+
+}
+.project-grid-container{
+    display: grid;
+    grid-template-columns: 390px 390px 330px;
+    grid-template-rows: 105px 105px 105px 105px 105px 105px;
+    gap: 32px;
+}
+.project-grid-container > * {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-left: 10px solid #f0b429;
+}
+.project-grid-container > *>* {
+    display: flex;
+    justify-content:center ;
+}
+.project-grid-container > *  > p {
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.supper-cool{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.cool-project{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.impossible-project{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.easy-project{
+    background-color:#FFFFFF;
+    border-radius: 10px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.Ad-project{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 7;
+
+}
+.money-project{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
+
+}
+.announce-contianer{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+}
+.trendings{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 7;
+
+}
+
+.project-grid-container > div {
+    display: flex;
+    flex-direction: column;
+}
+.interaction-icon {
+    margin-top: auto;
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+
+    padding: 20px;
+}
+.interaction-icon img{
+    width: 25px;
+    height: 25px;
+    margin-top: auto;
+}
+.announce-contianer{
+    /* display: flex;
+    flex-direction: column; */
+    row-gap: 22px;
+    justify-content: center;
+    padding: 10px;
+}
+
