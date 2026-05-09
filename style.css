@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 aside{
     position: sticky;
     top: 0;
-    z-index: 100;
+    height: 100vh;
 }
 .side-bar{
     
@@ -97,9 +97,8 @@ aside{
 }
 .side-bar > ul > li{
     display: flex;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    align-items: center;
+    gap: 20px;
 }
 .side-bar > ul > li *{
     display: flex;
