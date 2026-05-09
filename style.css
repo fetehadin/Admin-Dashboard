@@ -230,10 +230,10 @@ section{
     padding: 20px;
     border-left: 10px solid #f0b429;
 }
-.project-grid-container > *>* {
+/* .project-grid-container > *>* {
     display: flex;
     justify-content:center ;
-}
+} */
 .project-grid-container > *  > p {
     margin-left: 20px;
     font-size: 24px;
@@ -327,10 +327,22 @@ section{
     margin-top: auto;
 }
 .announce-contianer{
-    /* display: flex;
-    flex-direction: column; */
-    row-gap: 22px;
-    justify-content: center;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
 }
 
+.announce-contianer strong{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+hr{
+    width: 50%;
+    justify-content: center;
+}
